@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentations/screens/buttons/buttons_screens.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,7 +27,13 @@ class _HomeView extends StatelessWidget {
         final item = appMenuItems[index];
         return ListTile(
             onTap: () {
-              // todo navegar a otra pantall
+              // navegar => pude ser push,replace, etc
+              // Navigator.of(context).push(
+              //   // puedo mandar argumentos
+              // MaterialPageRoute(builder: (context) => const ButtonScreen()));
+
+              // Recondemendada
+              Navigator.pushNamed(context, item.link);
             },
             title: Text(item.title),
             subtitle: Text(
