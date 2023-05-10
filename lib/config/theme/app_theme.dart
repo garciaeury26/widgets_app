@@ -20,5 +20,5 @@ class AppTheme {
         assert(selectedColor < colorList.length,'Selected colors must be greated 0');
 
   ThemeData getTheme() =>
-      ThemeData(useMaterial3: true, colorSchemeSeed: colorList[selectedColor],appBarTheme: const AppBarTheme(centerTitle: true));
+      ThemeData(useMaterial3: true, brightness: Brightness.dark,colorSchemeSeed: colorList[selectedColor],appBarTheme: const AppBarTheme(centerTitle: true));
 }
