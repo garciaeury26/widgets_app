@@ -8,6 +8,10 @@ final appRouter = GoRouter(
       path: '/',
       builder: (context, state) => const HomeScreen(),
     ),
-    GoRoute(path: '/buttons',builder: (context, state) => const ButtonScreen()),
+    GoRoute(
+        path: '/buttons',
+        // para acceder a las rutas por nombro => opcional
+        name: ButtonScreen.routerName, // opcional
+        builder: (context, state) => const ButtonScreen()),
   ],
 );

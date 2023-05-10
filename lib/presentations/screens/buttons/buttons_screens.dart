@@ -1,8 +1,10 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ButtonScreen extends StatelessWidget {
+
+  // para acceder a las rutas por nombro => opcional
+  static const routerName = 'home_screen';
+
   const ButtonScreen({super.key});
 
   @override
