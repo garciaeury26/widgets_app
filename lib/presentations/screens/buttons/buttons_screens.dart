@@ -30,6 +30,8 @@ class _ButtonsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final myColors = Theme.of(context).colorScheme;
+
     return Container(
       margin: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -60,7 +62,40 @@ class _ButtonsView extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(Icons.adb_outlined),
                       label: const Text('Outline icons')),
+                  TextButton(onPressed: () {}, child: const Text('Text')),
+                  TextButton.icon(
+                    onPressed: () {},
+                    icon: const Icon(Icons.add_box_outlined),
+                    label: const Text('text icon'),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStatePropertyAll(myColors.surface)),
+                  ),
+                  const CustomButton()
                 ]),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // Cada widget dentro de Material tiene un aspecto y comportamiento coherente con el lenguaje de diseño visual de Material Design
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: Colors.blueAccent,
+        // La función principal de InkWell es proporcionar una respuesta táctil y visual para el usuario al tocar una parte específica de la interfaz de usuario,
+        child: InkWell(
+          onTap: () {},
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text('Hola'),
           ),
         ),
       ),
