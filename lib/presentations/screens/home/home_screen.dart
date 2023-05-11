@@ -36,9 +36,9 @@ class _HomeView extends StatelessWidget {
               // Navigator.pushNamed(context, item.link);
 
               // * Recomenda para la mayoria de proyectos
-              // context.push(item.link);
+              context.push(item.link);
               // * rutas con nombres
-              context.pushNamed(ButtonScreen.routerName);
+              // context.pushNamed(ButtonScreen.routerName);
             },
             title: Text(item.title),
             subtitle: Text(
