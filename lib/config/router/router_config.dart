@@ -14,6 +14,14 @@ final appRouter = GoRouter(
         // para acceder a las rutas por nombro => opcional
         name: ButtonScreen.routerName, // opcional
         builder: (context, state) => const ButtonScreen()),
-    GoRoute(path: '/cards',name: 'cards',builder: (context, state) => const CardsScreen())
+    GoRoute(
+        path: '/cards',
+        name: 'cards',
+        builder: (context, state) => const CardsScreen()),
+    GoRoute(
+      path: '/pogress',
+      name: const ProgresSCreen().name,
+      builder: (context, state) => const ProgresSCreen(),
+    )
   ],
 );
