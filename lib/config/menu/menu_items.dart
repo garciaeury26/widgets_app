@@ -19,8 +19,7 @@ const appMenuItems = <MenuItem>[
       title: 'Buttons',
       subTitle: 'Butons',
       link: '/buttons',
-      icon: Icons.access_alarms_outlined
-  ),
+      icon: Icons.access_alarms_outlined),
   MenuItem(
       title: 'Targetas',
       subTitle: 'targetas',
@@ -36,5 +35,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Indicadores en pantalla',
       link: '/snackbar',
       icon: Icons.info_outline),
-
+  MenuItem(
+      title: 'Animated Container',
+      subTitle: 'Stales full widget animado',
+      link: '/animacion',
+      icon: Icons.check_box_outline_blank)
 ];
