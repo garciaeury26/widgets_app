@@ -19,7 +19,8 @@ const appMenuItems = <MenuItem>[
       title: 'Buttons',
       subTitle: 'Butons',
       link: '/buttons',
-      icon: Icons.access_alarms_outlined),
+      icon: Icons.access_alarms_outlined
+  ),
   MenuItem(
       title: 'Targetas',
       subTitle: 'targetas',
@@ -30,4 +31,10 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Genrales y controlados',
       link: '/pogress',
       icon: Icons.refresh),
+  MenuItem(
+      title: 'SnackBar y dialogos',
+      subTitle: 'Indicadores en pantalla',
+      link: '/snackbar',
+      icon: Icons.info_outline),
+
 ];
