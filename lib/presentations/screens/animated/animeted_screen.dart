@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-// ? para funciones matematicas
 import 'dart:math' show Random;
 
 class AnimatedScreen extends StatefulWidget {
   final String name = 'animated_screen';
+
   const AnimatedScreen({super.key});
 
   @override
-  State<AnimatedScreen> createState() => _AnimatedScreenState();
+  _AnimatedScreenState createState() => _AnimatedScreenState();
 }
 
 class _AnimatedScreenState extends State<AnimatedScreen> {
@@ -20,11 +20,11 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animated Screen'),
+        title: const Text('Pantalla animada'),
       ),
       body: Center(
         child: AnimatedContainer(
-          duration: const Duration(microseconds: 400),
+          duration: const Duration(milliseconds: 1000),
           curve: Curves.elasticInOut,
           width: width <= 0 ? 0 : width,
           height: height <= 0 ? 0 : height,
@@ -33,13 +33,13 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: changeShape,
+        onPressed: _cambiarForma,
         child: const Icon(Icons.play_arrow_rounded),
       ),
     );
   }
 
-  void changeShape() {
+  void _cambiarForma() {
     final random = Random();
     setState(() {
       width = random.nextInt(300) + 120;

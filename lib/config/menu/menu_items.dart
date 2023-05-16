@@ -39,5 +39,10 @@ const appMenuItems = <MenuItem>[
       title: 'Animated Container',
       subTitle: 'Stales full widget animado',
       link: '/animacion',
-      icon: Icons.check_box_outline_blank)
+      icon: Icons.check_box_outline_blank),
+  MenuItem(
+      title: 'Ui controllers',
+      subTitle: 'radio buttons, checkbox, swich etc',
+      link: '/uicontrols',
+      icon: Icons.check_box)
 ];
