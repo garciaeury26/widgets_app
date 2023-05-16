@@ -1,5 +1,5 @@
-
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class AppTutorialScreen extends StatelessWidget {
   final String name = 'tutorial_screen';
@@ -8,6 +8,11 @@ class AppTutorialScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tutorial'),
+      ),
+      body: Container(),
+    );
   }
 }

@@ -44,5 +44,10 @@ const appMenuItems = <MenuItem>[
       title: 'Ui controllers',
       subTitle: 'radio buttons, checkbox, swich etc',
       link: '/uicontrols',
-      icon: Icons.check_box)
+      icon: Icons.check_box),
+  MenuItem(
+      title: 'Tutorial page view',
+      subTitle: 'radio buttons, checkbox, swich etc',
+      link: '/tutorial',
+      icon: Icons.android)
 ];
