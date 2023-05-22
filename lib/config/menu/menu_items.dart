@@ -49,5 +49,10 @@ const appMenuItems = <MenuItem>[
       title: 'Tutorial page view',
       subTitle: 'radio buttons, checkbox, swich etc',
       link: '/tutorial',
-      icon: Icons.android)
+      icon: Icons.android),
+  MenuItem(
+      title: 'Infinite scrooll y pull to refresh',
+      subTitle: 'radio buttons, checkbox, swich etc',
+      link: '/infiniteScroll',
+      icon: Icons.list),
 ];

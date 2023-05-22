@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
 import 'package:widgets_app/presentations/screens/buttons/buttons_screens.dart';
+import 'package:widgets_app/presentations/screens/drawer/drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,6 +14,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Widgets en fluter'),
       ),
       body: _HomeView(),
+      endDrawer: SideMenu(),
     );
   }
 }

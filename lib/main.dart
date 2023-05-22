@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp.router(
       // routes: {
       //   '/buttons': (context) => const ButtonScreen(),
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       // },
       // * manera recomendada de router
       routerConfig: appRouter,
-      theme:AppTheme(selectedColor: 6).getTheme(),
+      theme: AppTheme(selectedColor: 6).getTheme(),
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       // home: const HomeScreen()
