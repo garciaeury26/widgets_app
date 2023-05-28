@@ -55,4 +55,14 @@ const appMenuItems = <MenuItem>[
       subTitle: 'radio buttons, checkbox, swich etc',
       link: '/infiniteScroll',
       icon: Icons.list),
+  MenuItem(
+      title: 'Counter screen',
+      subTitle: 'introduccion a reverpood',
+      link: '/counter',
+      icon: Icons.add),
+  MenuItem(
+      title: 'Theme',
+      subTitle: 'Theme configuration',
+      link: '/theme',
+      icon: Icons.palette),
 ];
