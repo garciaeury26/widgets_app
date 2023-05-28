@@ -15,8 +15,9 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, ref) {
-    final bool isDarkMode = ref.watch(darkModeProvider);
-    final int selectedColor = ref.watch(selectedColorProvider);
+    // final bool isDarkMode = ref.watch(darkModeProvider);
+    // final int selectedColor = ref.watch(selectedColorProvider);
+    final appTheme = ref.watch(themeNotifierProvider);
 
     return MaterialApp.router(
       // routes: {
@@ -25,8 +26,7 @@ class MyApp extends ConsumerWidget {
       // },
       // * manera recomendada de router
       routerConfig: appRouter,
-      theme: AppTheme(selectedColor: selectedColor, isDarkMode: isDarkMode)
-          .getTheme(),
+      theme: appTheme.getTheme(),
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       // home: const HomeScreen()
